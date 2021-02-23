@@ -1,0 +1,274 @@
+<div class="body">
+  <!-- Main Banner -->
+  <div class="banner-container" style="">
+    <img src="banners/main_banner2.jpg" class="image-responsive" style="max-width: 100%;
+        object-fit: cover; display: block">
+    <div class="banner-text">
+      <h4 class="animate__animated animate__fadeInDown">Salud, donde sea</h4>
+      <p style="word-wrap: break-word" class="animate__animated animate__fadeInDown"> Lab-U brinda servicios de laboratorio
+        en telesalud a pacientes y socios.</p>
+    </div>
+  </div>
+  <!-- Our Product -->
+  <div style="text-align: center">
+    <div class="section-header">
+      <h2> NUESTROS SERVICIOS</h2>
+      <hr>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="carousel">
+      <div class="col-lg-4 col-md-6">
+        <img src="banners/kit_image.png" width="300px" height="auto">
+        <p></p>
+        <br>
+        <h3><a href="#">Covid-19 PCR</a></h3>
+        <p>Esta prueba ayudará a saber si fuiste infectado y no lo supiste, estas en
+          fase de recuperación o si has generado resistencia.
+        </p>
+        <p></p>
+        <button style="border-radius: 20px" type="button" class="btn btn-outline-primary"> &nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="banners/kit_image.png" width="300px" height="auto">
+        <p></p>
+        <br>
+        <h3><a href="#">Anticuerpos IgG (COVID-19) de ABBOTT</a></h3>
+        <p>Completa el formulario de elegibilidad para la Prueba COVID-19. Si eres elegible paga para obtener el kit y
+          servicio.</p>
+        <p></p>
+        <button style="border-radius: 20px" type="button" class="btn btn-outline-primary">&nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="banners/kit_image.png" width="300px" height="auto">
+        <p></p>
+        <br>
+        <h3><a href="#">Prueba rápida IgM y IgG (COVID-19)</a></h3>
+        <p>La prueba rápida  lgG / lgM se puede utilizar para detectar si ha habido una
+          respuesta inmune al COVID-19 y por lo tanto inferir si está presente el virus.</p>
+        <p></p>
+        <button style="border-radius: 20px" type="button" class="btn btn-outline-primary">&nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="banners/kit_image.png" width="300px" height="auto">
+        <p></p>
+        <br>
+        <h3><a href="#">DNA Test</a></h3>
+        <p>Completa el formulario de elegibilidad para la Prueba COVID-19. Si eres elegible paga para obtener el kit y
+          servicio.</p>
+        <p></p>
+        <button style="border-radius: 20px" type="button" class="btn btn-outline-primary"> &nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <img src="banners/kit_image.png" width="300px" height="auto">
+        <p></p>
+        <br>
+        <h3><a href="#">DNA Test</a></h3>
+        <p>Completa el formulario de elegibilidad para la Prueba COVID-19. Si eres elegible paga para obtener el kit y
+          servicio.</p>
+        <p></p>
+        <button style="border-radius: 20px" type="button" class="btn btn-outline-primary"> &nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+      </div>
+      <% @tests.each do |test|%>
+        <div class="col-lg-4 col-md-6">
+          <img src="banners/kit_image.png" width="300px" height="auto">
+          <p></p>
+          <br>
+          <h3><a href="#"><%=test.study%></a></h3>
+          <p>hello</p>
+          <p></p>
+          <button style="border-radius: 20px" type="button" class="btn btn-outline-primary"> &nbsp;&nbsp;&nbsp;Order&nbsp;&nbsp;&nbsp;</button>
+        </div>
+      <%end %>
+    </div>
+  </div>
+  <p style="margin-top: 40px; margin-bottom: 40px"></p>
+</div>
+<!-- How it Works -->
+<div style="text-align: center">
+  <div class="section-header">
+    <h2>¿Cómo Funciona?</h2>
+    <hr>
+  </div>
+</div>
+<br>
+<div class="row row-como-f">
+  <div class="col-lg-6 col-sm-12">
+    <div class="function-steps">
+      <img src="icons/calendar.png">
+      <div style="margin-left: 70px;">
+        <h3 style="position: relative"><a>PIDE TUS SERVICIOS</a></h3>
+        <p>Con enfermera o Kit De Autotoma de muestra vía Whatsapp</p>
+      </div>
+    </div>
+    <div class="function-steps">
+      <img src="icons/medicine.png">
+      <div style="margin-left: 70px;">
+        <h3 style="position: relative"><a>TOMA DE MUESTRA</a></h3>
+        <p>Recibe el kit y regístralo en tu cuenta Lab-U y toma tu muestra en casa.</p>
+      </div>
+    </div>
+    <div class="function-steps">
+      <img src="icons/home.png">
+      <div style="margin-left: 70px;">
+        <h3 style="position: relative"><a>RECIBE TUS RESULTADOS</a></h3>
+        <p>Revisalos en línea de manera segura.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-sm-12" style="padding: 0 !important;">
+    <img src="banners/labu_how_it_works.jpg" style="width: 100%">
+  </div>
+</div>
+
+<!-- Video Section -->
+<div class="row our-lab-row">
+  <div class="col-lg-6 col-sm-12" style="padding: 0;">
+    <img src="banners/doctor-image.jpg" style="width: 100%;">
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <span>
+      <h1>
+      NUESTROS COMPAÑEROS
+      </h1>
+      <p>
+· Trabajamos con los mejores laboratorios certificados y autorizados por gobierno para
+las pruebas COVID-19. *Nos aseguramos que cada estudio cumpla con los estándares
+mundiales de calidad.<br>
+· El 62% de los errores en el análisis de muestras en laboratorio ocurre en la fase
+preclínica. Para evitar errores, en Lab-U contamos con la tecnología para el rastreo de
+muestras de principio a fin.<br>
+· Tu privacidad y confidencialidad es una prioridad para nosotros. Seudonimización de
+tus datos, encriptación y múltiples capas de seguridad para proteger tu información
+personal.      </p>
+    </span>
+  </div>
+</div>
+
+<!-- Our Lab -->
+<div class="row our-lab-row">
+  <div class="col-lg-6 col-sm-12">
+    <span>
+      <h1>
+     VENTAJAS
+      </h1>
+      <p>
+Las soluciones de Lab-U evitan la continua propagación de las enfermedades al
+proporcionarle servicios de prueba en su hogar. Evita el riesgo de contagio cruzado
+entre personal de salud y pacientes.<br><br>
+· 100% seguro y confidencial
+        <br>
+· Tecnología de punta. Estudios por ADN.
+        <br>
+· Cómodo, privado y discreto.
+        <br>
+· Resultados en línea      </p>
+    </span>
+  </div>
+  <div class="col-lg-6 col-sm-12" style="padding-left: 0;">
+    <a href="https://www.youtube.com/watch?time_continue=7&amp;v=xGKpqUyBhP0&amp;feature=emb_logo" target="_blank">
+      <img src="banners/video_section.jpg" style="width: 100%; padding-left: 0 !important;">
+    </a>
+  </div>
+</div>
+
+<!-- Featured in -->
+<br>
+<div style="text-align: center">
+  <div class="section-header">
+    <h2>PRESENTADA EN</h2>
+    <hr>
+  </div>
+</div>
+<div class="container">
+  <div class="row featured-in">
+    <div class="col-lg-4" style="">
+      <img src="featured/history.png">
+    </div>
+    <div class="col-lg-4">
+      <img src="featured/mit.png">
+    </div>
+    <div class="col-lg-4">
+      <img src="featured/forbes.png">
+    </div>
+  </div>
+</div>
+
+<br>
+<div style="text-align: center">
+  <div class="section-header">
+    <h2>TESTIMONIOS</h2>
+    <hr>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="testimonials" style="width: 80%;margin:0px auto 20px;">
+    <img src="testimonials/first_testimonial.png" style=" ">
+    <img src="testimonials/second_testimonial.png" style="height: 300px; width: auto">
+    <img src="testimonials/third_testimonial.png" style="height: 300px; width: auto">
+    <img src="testimonials/fourth_testimonial.png" style="height: 300px; width: auto">
+  </div>
+</div>
+
+
+
+<script>
+    var options = {
+        valueNames: ['name', 'discount']
+    };
+
+    var userList = new List('tests', options);
+    $(document).ready(function () {
+        $('.carousel').slick({
+            slidesToShow: 3,
+            centerMode: false,
+            dots: true,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 980, // tablet breakpoint
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480, // mobile breakpoint
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+        $('.testimonials').slick({
+            slidesToShow: 1,
+            variableWidth: true,
+            variableHeight: true,
+            centerMode: true,
+            centerPadding: '60px',
+            dots: true,
+            autoplay: true,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 980, // tablet breakpoint
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480, // mobile breakpoint
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '0px',
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+<br>

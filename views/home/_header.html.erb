@@ -1,0 +1,88 @@
+<!-- Navigation Bar -->
+<div class="home-page">
+  <div class="navbar-custom">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        COVID-19 Servicios de pruebas en el hogar disponibles.
+        Solicite sus servicios para una recogida domiciliaria segura y precisa.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="color: white; z-index: 2">
+          <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="labu_logo.png" width='125px' height=auto alt="logo" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item px-lg-2 dropdown d-menu">
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pedir Estudios
+              </a>
+              <div class="dropdown-menu sm-menu" aria-labelledby="dropdown01">
+                <h6 class="dropdown-header"><b>Covid-19</b></h6>
+                <a class="dropdown-item" href="order_histories/new">Order</a>
+                <a class="dropdown-item" href="#">Item2</a>
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header"><b>Other</b></h6>
+                <a class="dropdown-item" href="#">Item3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <% if current_user.nil? %>
+                <a class="nav-link" href="users/sign_in">Ingresar / Registrar</a>
+              <% else %>
+                <a class="nav-link" href="users/sign_in">Tablero de Control</a>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sobre Nosotros</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        if ($(window).width() > 500) {
+            $('.navbar-light .d-menu').hover(function () {
+                $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+            }, function () {
+                $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+            });
+        }
+    });
+
+    $(document).ready(function(){
+        var navHeight = $(".navbar").height();
+        var combinedHeight = navHeight + $(".alert").height() + 20
+        modifyPadding()
+        $( "button.close" ).click(function() {
+            combinedHeight = navHeight
+            combinedHeight /= 2
+            modifyPadding()
+        });
+
+        function modifyPadding() {
+
+            combinedHeight += 22
+            $(".home-page").css("padding-bottom", combinedHeight + "px");
+    }});
+
+    window.addEventListener('scroll', (e) => {
+        const nav = document.querySelector('.sticky-top');
+        if (window.pageYOffset > 0) {
+            nav.classList.add("add-shadow");
+        } else {
+            nav.classList.remove("add-shadow");
+        }
+    });
+</script>
