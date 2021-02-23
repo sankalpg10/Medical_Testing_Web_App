@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  sex: MyString
+  age: 1
+  mother_last_name: MyString
+  father_last_name: MyString
+  birthday: MyString
+  sampling_date: MyString
+  sampling_time: MyString
+  observations: MyText
+  key_study: MyString
+  study: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  sex: MyString
+  age: 1
+  mother_last_name: MyString
+  father_last_name: MyString
+  birthday: MyString
+  sampling_date: MyString
+  sampling_time: MyString
+  observations: MyText
+  key_study: MyString
+  study: MyString

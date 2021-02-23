@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: 1
+  gender: MyString
+  reasons: MyText
+  personal_history: MyString
+  prior_illness: MyString
+  medication: MyString
+  sti_history: MyString
+  sti: MyString
+  symptoms: MyString
+  symptoms_described: MyText
+  symptom_start_time: MyString
+  obvious_reasons: MyText
+  health_changes: MyString
+  sexual_contact: MyString
+  additional: MyText
+
+two:
+  age: 1
+  gender: MyString
+  reasons: MyText
+  personal_history: MyString
+  prior_illness: MyString
+  medication: MyString
+  sti_history: MyString
+  sti: MyString
+  symptoms: MyString
+  symptoms_described: MyText
+  symptom_start_time: MyString
+  obvious_reasons: MyText
+  health_changes: MyString
+  sexual_contact: MyString
+  additional: MyText
