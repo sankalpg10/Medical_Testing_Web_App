@@ -1,0 +1,2 @@
+module DoctorRecommendationsHelper
+end
