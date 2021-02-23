@@ -1,0 +1,3 @@
+class KitIDTracker < ApplicationRecord
+
+end

@@ -1,0 +1,2 @@
+class SampleCollection < ApplicationRecord
+end

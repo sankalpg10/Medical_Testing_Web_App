@@ -1,0 +1,2 @@
+class TelehealthProfile < ApplicationRecord
+end
