@@ -1,0 +1,339 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$light-blue: #E3F1FC;
+//#CCFFFF
+$blue: #005DA2;
+$white-blue: #494951;
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// <-- Header -->
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add-shadow {
+  box-shadow: 0px 10px 20px -20px black;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.sticky-top {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+
+.navbar-custom {
+  margin: 0 !important;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  width: 100%;
+  font-size: 18px;
+  font-family: Verdana;
+}
+
+.nav-link {
+  color: $blue;
+  font-size: 17px;
+  font-family: Verdana;
+}
+
+.alert {
+  width: 100%;
+  height: auto;
+  background-color: #005DA2;
+  color: white;
+  text-align: center;
+  z-index: 100;
+  margin-bottom: 0;
+}
+
+.alert-warning {
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.close {
+  margin-right: 10px;
+}
+
+// <-- Main Banner -->
+.banner-container {
+  position: relative;
+
+  .banner-text {
+    color: $blue;
+    width: 25vw;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+
+    h4 {
+      font-weight: bold;
+    }
+  }
+}
+
+// <-- Our Product -->
+
+
+.our-product-list {
+  img {
+    -webkit-transition: transform 0.25s ease-out;
+    -moz-transition: transform 0.25s ease-out;
+    -o-transition: transform 0.25s ease-out;
+  }
+
+  img:hover {
+    transform: translate(0px, -10px);
+    //transform: scale(1.1);
+
+  }
+
+  p {
+    margin: 30px 60px 30px 60px;
+
+  }
+
+  button {
+    border-radius: 20px;
+
+  }
+
+  .row {
+    .col-lg-4 {
+      h3 {
+        a {
+          color: dimgrey;
+          font-weight: bold;
+          -webkit-transition: color ease-out 300ms;
+        }
+
+        a:hover {
+          -webkit-transition: color ease-in-out 300ms;
+          color: $blue;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}
+
+// <-- How it Works -->
+.row-como-f {
+  .col-lg-6 {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .col-lg-6 {
+    .function-steps {
+      margin: 40px 0 40px 40px;
+
+      img {
+        width: 40px;
+        float: left;
+        margin-right: 20px;
+        filter: invert(16%) sepia(100%) saturate(2980%) hue-rotate(192deg) brightness(94%) contrast(102%);
+      }
+    }
+  }
+}
+
+//<-- Our Lab -->
+.our-lab-row {
+  .col-lg-6 {
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .col-lg-6 {
+    background-color: $light-blue;
+
+    span {
+      h1 {
+        text-align: left;
+        color: $blue;
+        margin: 10% 0 5% 10%;
+        font-weight: bolder;
+        font-family: Helvetica;
+      }
+
+      p {
+        text-align: left;
+        margin: 0 10% 10%;
+      }
+    }
+  }
+}
+
+
+// <-- Introduction -->
+.my-auto {
+  img {
+    border-radius: 10%;
+    transition: transform .2s;
+  }
+
+  img:hover {
+    transform: scale(1.2)
+  }
+}
+
+h2 {
+  text-align: center;
+  //color: $primary-color;
+}
+
+.col-lg-4 {
+  text-align: center;
+}
+
+// <-- Featured In -->
+.featured-in {
+  .col-lg-4 {
+    align-items: center;
+    justify-content: center;
+
+    img {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-filter: grayscale(100%) !important;
+      filter: grayscale(100%) !important;
+      width: auto;
+      height: 60px;
+      vertical-align: middle;
+      margin-top: 10%;
+      -webkit-transition: filter 0.25s ease-out;
+      -moz-transition: filter 0.25s ease-out;
+      -o-transition: filter 0.25s ease-out;
+    }
+
+    @media only screen and (min-device-width: 768px) {
+      img:hover {
+        -webkit-filter: grayscale(0) !important;
+        filter: grayscale(0) !important;
+      }
+    }
+  }
+}
+
+
+// <-- Footer -->
+.footer {
+  padding: 50px;
+}
+
+
+// <-- Shared -->
+.section-header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: inline-block;
+
+  h2 {
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  hr {
+    height: 3px;
+    border: none;
+    background-color: $blue;
+    width: 90%;
+    margin: 0px auto 0px auto;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+
+}
+
+.carousel {
+  width: 80%;
+  margin: 0px auto 20px;
+}
+
+.slick-slide {
+  outline: none;
+  margin: 10px;
+}
+
+.slick-slide img {
+  -webkit-transform: translateZ(0);
+  width: 100%;
+  -webkit-transition: transform 0.25s ease-out;
+  -moz-transition: transform 0.25s ease-out;
+  -o-transition: transform 0.25s ease-out;
+}
+
+.slick-slide img:hover {
+  transform: translate(0px, -10px) translateZ(0);
+}
+
+.wrapper {
+  .testimonials {
+    width: 80%;
+    margin: 0px auto 20px;
+
+    img {
+      height: 300px;
+      width: auto;
+    }
+
+    @media only screen and (min-width: 500px) {
+      .slick-slide {
+        margin: 40px;
+        opacity: .6;
+      }
+      .slick-center {
+        transform: scale(1.15);
+        display: block;
+        max-width: 10% !important;
+        max-height: 20% !important;
+        opacity: 1;
+      }
+    }
+    @media only screen and (max-width: 490px) {
+      .slick-slide {
+        transform: scale(0.75);
+      }
+    }
+  }
+}
+
+.carousel {
+  .slick-slide {
+    margin: 40px;
+  }
+}
+
+.slick-prev:before {
+  color: #005da2;
+}
+
+.slick-next:before {
+  color: #005da2;
+}
+
