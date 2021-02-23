@@ -1,0 +1,15 @@
+// Place all the styles related to the order_histories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+textarea:focus,
+input:focus,
+.uneditable-input:focus {
+  border-color: #007BFF;
+  transition: box-shadow 0.3s ease-in-out;
+  outline: 0 none;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
